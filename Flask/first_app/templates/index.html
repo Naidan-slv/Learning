@@ -1,15 +1,18 @@
 {% extends "base.html"%}
 {% block title %}Index Page{% endblock %}
 {% block content %}
+    <h1>Hello !!!</h1>
+    <form method="POST" action="{{ url_for('index') }}">
+        <input type="text" name="username" placeholder="Username">
+        <input type="text" name="password" placeholder="Password">
+        <input type="submit" value="Login">
+    </form>
 
-<h1>Hello World From HTML !!!</h1>
-    <ul>
-        {% for item in mylist %}
-            <li {% if item == 30 %}style ="color: red;"{% endif %}>{{ item }}</li>
-        {% endfor %}
-    </ul>
-    <p>{{ mylist }}</p>
-    <a href="{{ url_for('other') }}">Other</a>
-    <!-- This is where we managed to redirect our path. -->
-         
+    <h1>File Upload</h1>
+    <form action="POST" action ="{{ url_for('file_upload') }}" enctype="multipart/form-data">
+        <input type="file" name="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel, text/plain" required="required">
+        <input type="submit" value="Upload">
+    </form>
+    <!--encytpe is important as we are going to pass files-->
+
 {% endblock %}

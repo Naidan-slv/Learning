@@ -1,14 +1,15 @@
 {% extends "base.html"%}
-{%block title %}Index Page{%endblock
-    %}
-{%block content%}
+{% block title %}Index Page{% endblock %}
+{% block content %}
 
 <h1>Hello World From HTML !!!</h1>
     <ul>
-        {% for item in mylist%}
-            {% if item == 30 %}
-                <li {% if item == 30 %}style ="color: red;"{% endif %}>{{ item }}</li>
+        {% for item in mylist %}
+            <li {% if item == 30 %}style ="color: red;"{% endif %}>{{ item }}</li>
         {% endfor %}
-    // when the value is equal to 30 we will get the color red
     </ul>
     <p>{{ mylist }}</p>
+    <a href="{{ url_for('other') }}">Other</a>
+    <!-- This is where we managed to redirect our path. -->
+         
+{% endblock %}

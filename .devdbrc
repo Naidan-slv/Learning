@@ -1,0 +1,6 @@
+[
+  {
+    "type": "sqlite",
+    "path": "/workspaces/Learning/Flask/third_app/.testdb.db"
+  }
+]

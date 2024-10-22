@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{%block title%} Default Value{% endblock %}</title>
+    <title>{% block title %} Default Value {% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/bootstrap.css') }}">
 </head>
 <body>
     <p>This will always be here</p>
-    {%block content%}{%endblock%}
+    {% block content %}{% endblock %}
+    <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
 </body>
 </html>

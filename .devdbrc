@@ -2,5 +2,9 @@
   {
     "type": "sqlite",
     "path": "/workspaces/Learning/Flask/third_app/.testdb.db"
+  },
+  {
+    "type": "sqlite",
+    "path": "/workspaces/Learning/Flask/SQLALchemy/mydb2.db"
   }
 ]

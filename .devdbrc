@@ -6,5 +6,9 @@
   {
     "type": "sqlite",
     "path": "/workspaces/Learning/Flask/SQLALchemy/mydb2.db"
+  },
+  {
+    "type": "sqlite",
+    "path": "/workspaces/Learning/Flask/Codemy (App 2)/instance/users.db"
   }
 ]
